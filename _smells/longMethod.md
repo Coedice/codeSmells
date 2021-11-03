@@ -2,10 +2,10 @@
 layout: smell
 group: Bloater
 title: Long Method
-file: longMethod.png
+image: longMethod.png
 ---
-<p>Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.</p>
-<h2>Example</h2>
+Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
+## Example</h2>
 <code>def longMethod(self):
     # Do first thing
     &vellip;
