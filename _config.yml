@@ -1,3 +1,4 @@
 collections:
   smells:
     output: true
+    permalink: /:path
