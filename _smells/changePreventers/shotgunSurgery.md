@@ -1,8 +1,8 @@
 ---
 layout: smell
-group: Dispensables
-title: Speculative Generality
-image: speculativeGenerality.png
+group: Change Preventers
+title: Shotgun Surgery
+image: shotgunSurgery.png
 ---
 Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
 ## Example

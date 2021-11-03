@@ -1,6 +1,6 @@
 ---
 layout: smell
-group: Object-Orientation Abusers
+group: Dispensables
 title: Lazy Class
 image: lazyClass.png
 ---

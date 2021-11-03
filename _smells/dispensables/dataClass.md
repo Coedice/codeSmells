@@ -1,6 +1,6 @@
 ---
 layout: smell
-group: Object-Orientation Abusers
+group: Dispensables
 title: Data Class
 image: dataClass.png
 ---

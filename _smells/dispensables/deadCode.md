@@ -1,6 +1,6 @@
 ---
 layout: smell
-group: Object-Orientation Abusers
+group: Dispensables
 title: Dead Code
 image: deadCode.png
 ---
