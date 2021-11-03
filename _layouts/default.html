@@ -25,7 +25,7 @@
 			{{ content }}
 			{% include books.html %}
 			<p id="footer">
-				&copy; 2021 <a href="https://gavindou.ch" rel="author">Gavin Douch</a>
+				&copy; {{ site.time | date: '%Y' }} <a href="https://gavindou.ch" rel="author">Gavin Douch</a>
 			</p>
 		</div>
 	</body>
