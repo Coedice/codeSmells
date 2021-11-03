@@ -10,35 +10,25 @@ layout: default
 <p>A <b>Bloater</b> smell represents a code element that has grown so large that it cannot be effectively handled.</p>
 <div class="smellList">
 	{% for smell in site.smells %}
-		<a href="{{ smell.url | absolute_url }}">
-			<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
-			{{ smell.title }}
-		</a>
+		{% if smell.group == "Bloater" %}
+			<a href="{{ smell.url | absolute_url }}">
+				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
+				{{ smell.title }}
+			</a>
+		{% endif %}
 	{% endfor %}
-<!--	<a href="_smells/bloater/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/dataClump.png" alt="Long Method icon" />-->
-<!--		Data Clump-->
-<!--	</a>-->
 </div>
 <h2 id="objectOrientationAbusers">Object-Orientation Abusers</h2>
 <p>An <b>Object-Orientation Abuser</b> smell occurs when code does not take full advantage of object-oriented design.</p>
 <div class="smellList">
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/switchStatement.png" alt="Long Method icon" />
-		Switch Statement
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/temporaryField.png" alt="Long Method icon" />
-		Temporary Field
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/refusedBequest.png" alt="Long Method icon" />
-		Refused Bequest
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/alternativeClassesWithDifferentInterfaces.png" alt="Long Method icon" />
-		Alternative Classes with Different Interfaces
-	</a>
+	{% for smell in site.smells %}
+		{% if smell.group == "Object-Orientation Abuser" %}
+			<a href="{{ smell.url | absolute_url }}">
+				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
+				{{ smell.title }}
+			</a>
+		{% endif %}
+	{% endfor %}
 </div>
 <h2 id="changePreventers">Change Preventers</h2>
 <div class="smellList">
