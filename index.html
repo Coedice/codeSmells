@@ -33,13 +33,13 @@ groups:
 </div>
 {% for group in page.groups %}
 	<h2 id="{{ group.name }}">{{ group.name }}</h2>
-	<p>{{ group.description }}</p>
+	<p>{{ group.description | markdownify }}</p>
 	<div class="smellList">
 		{% for smell in site.smells %}
 			{% if smell.group == group.name %}
 			<a href="{{ smell.url | absolute_url }}">
 				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
-				{{ smell.title | markdownify  }}
+				{{ smell.title }}
 			</a>
 			{% endif %}
 		{% endfor %}
