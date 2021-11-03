@@ -1,8 +1,8 @@
 ---
 layout: smell
-group: Bloater
-title: Primitive Obsession
-image: primitiveObsession.png
+group: Bloaters
+title: Large Class
+image: largeClass.png
 ---
 Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
 ## Example

@@ -1,8 +1,8 @@
 ---
 layout: smell
-group: Bloater
-title: Long Parameter List
-image: longParameterList.png
+group: Bloaters
+title: Data Clump
+image: dataClump.png
 ---
 Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
 ## Example

@@ -1,8 +1,8 @@
 ---
 layout: smell
-group: Object-Orientation Abuser
-title: Refused Bequest
-image: refusedBequest.png
+group: Object-Orientation Abusers
+title: Alternative Classes with Different Interfaces
+image: alternativeClassesWithDifferentInterfaces.png
 ---
 Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
 ## Example

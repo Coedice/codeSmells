@@ -1,91 +1,138 @@
 ---
 layout: default
+
+groups:
+-
+  name: "Bloaters"
+  description: |-
+    A *Bloater* smell represents a code element that has grown so large that it cannot be effectively handled.
+-
+  name: "Object-Orientation Abusers"
+  description: |-
+    A *Bloater* smell represents a code element that has grown so large that it cannot be effectively handled.
+-
+  name: "Change Preventers"
+  description: |-
+    A *Bloater* smell represents a code element that has grown so large that it cannot be effectively handled.
+
+-
+  name: "Dispensables"
+  description: |-
+    A *Bloater* smell represents a code element that has grown so large that it cannot be effectively handled.
+
+-
+  name: "Couplers"
+  description: |-
+    A *Bloater* smell represents a code element that has grown so large that it cannot be effectively handled.
+
 ---
 <div id="definition">
 	<h2>Code smell <span id="pronunciation">/k&#601;&#650;d sm&#603;l/</span></h2>
 	<i>noun</i>
 	<p>A characteristic of computer code that may indicate a deeper flaw.</p>
 </div>
-<h2 id="bloaters">Bloaters</h2>
-<p>A <b>Bloater</b> smell represents a code element that has grown so large that it cannot be effectively handled.</p>
-<div class="smellList">
-	{% for smell in site.smells %}
-		{% if smell.group == "Bloater" %}
+
+
+{% for group in page.groups %}
+	<h2 id="{{ group.name }}">{{ group.name }}</h2>
+	<p>{{ group.description }}</p>
+	<div class="smellList">
+		{% for smell in site.smells %}
+			{% if smell.group == group.name %}
 			<a href="{{ smell.url | absolute_url }}">
 				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
 				{{ smell.title }}
 			</a>
-		{% endif %}
-	{% endfor %}
-</div>
-<h2 id="objectOrientationAbusers">Object-Orientation Abusers</h2>
-<p>An <b>Object-Orientation Abuser</b> smell occurs when code does not take full advantage of object-oriented design.</p>
-<div class="smellList">
-	{% for smell in site.smells %}
-		{% if smell.group == "Object-Orientation Abuser" %}
-			<a href="{{ smell.url | absolute_url }}">
-				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
-				{{ smell.title }}
-			</a>
-		{% endif %}
-	{% endfor %}
-</div>
-<h2 id="changePreventers">Change Preventers</h2>
-<div class="smellList">
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/divergentChange.png" alt="Long Method icon" />
-		Divergent Change
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/shotgunSurgery.png" alt="Long Method icon" />
-		Shotgun Surgery
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/parallelInheritanceHierarchies.png" alt="Long Method icon" />
-		Parallel Inheritance Hierarchies
-	</a>
-</div>
-<h2 id="dispensables">Dispensables</h2>
-<div class="smellList">
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/lazyClass.png" alt="Long Method icon" />
-		Lazy Class
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/dataClass.png" alt="Long Method icon" />
-		Data Class
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/duplicateCode.png" alt="Long Method icon" />
-		Duplicate Code
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/deadCode.png" alt="Long Method icon" />
-		Dead Code
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/speculativeGenerality.png" alt="Long Method icon" />
-		Speculative Generality
-	</a>
-</div>
-<h2 id="couplers">Couplers</h2>
-<div class="smellList">
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/featureEnvy.png" alt="Long Method icon" />
-		Feature Envy
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/inappropriateIntimacy.png" alt="Long Method icon" />
-		Inappropriate Intimacy
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/messageChain.png" alt="Long Method icon" />
-		Message Chain
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/middleMan.png" alt="Long Method icon" />
-		Middle Man
-	</a>
+			{% endif %}
+		{% endfor %}
+	</div>
+{% endfor %}
+
+<!--<h2 id="Bloaters">Bloaters</h2>-->
+<!--<p>A <b>Bloater</b> smell represents a code element that has grown so large that it cannot be effectively handled.</p>-->
+<!--<div class="smellList">-->
+<!--	{% for smell in site.smells %}-->
+<!--		{% if smell.group == "Bloater" %}-->
+<!--			<a href="{{ smell.url | absolute_url }}">-->
+<!--				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />-->
+<!--				{{ smell.title }}-->
+<!--			</a>-->
+<!--		{% endif %}-->
+<!--	{% endfor %}-->
+<!--</div>-->
+
+
+
+<!--<h2 id="Object-Orientation Abusers">Object-Orientation Abusers</h2>-->
+<!--<p>An <b>Object-Orientation Abuser</b> smell occurs when code does not take full advantage of object-oriented design.</p>-->
+<!--<div class="smellList">-->
+<!--	{% for smell in site.smells %}-->
+<!--		{% if smell.group == "Object-Orientation Abuser" %}-->
+<!--			<a href="{{ smell.url | absolute_url }}">-->
+<!--				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />-->
+<!--				{{ smell.title }}-->
+<!--			</a>-->
+<!--		{% endif %}-->
+<!--	{% endfor %}-->
+<!--</div>-->
+
+
+<!--<h2 id="Change Preventers">Change Preventers</h2>-->
+<!--<div class="smellList">-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/divergentChange.png" alt="Long Method icon" />-->
+<!--		Divergent Change-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/shotgunSurgery.png" alt="Long Method icon" />-->
+<!--		Shotgun Surgery-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/parallelInheritanceHierarchies.png" alt="Long Method icon" />-->
+<!--		Parallel Inheritance Hierarchies-->
+<!--	</a>-->
+<!--</div>-->
+<!--<h2 id="Dispensables">Dispensables</h2>-->
+<!--<div class="smellList">-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/lazyClass.png" alt="Long Method icon" />-->
+<!--		Lazy Class-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/dataClass.png" alt="Long Method icon" />-->
+<!--		Data Class-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/duplicateCode.png" alt="Long Method icon" />-->
+<!--		Duplicate Code-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/deadCode.png" alt="Long Method icon" />-->
+<!--		Dead Code-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/speculativeGenerality.png" alt="Long Method icon" />-->
+<!--		Speculative Generality-->
+<!--	</a>-->
+<!--</div>-->
+<!--<h2 id="Couplers">Couplers</h2>-->
+<!--<div class="smellList">-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/featureEnvy.png" alt="Long Method icon" />-->
+<!--		Feature Envy-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/inappropriateIntimacy.png" alt="Long Method icon" />-->
+<!--		Inappropriate Intimacy-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/messageChain.png" alt="Long Method icon" />-->
+<!--		Message Chain-->
+<!--	</a>-->
+<!--	<a href="_smells/bloaters/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/middleMan.png" alt="Long Method icon" />-->
+<!--		Middle Man-->
+<!--	</a>-->
 </div>
 <div id="bookList">
 	<h2>Books about code smells</h2>

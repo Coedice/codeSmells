@@ -1,8 +1,8 @@
 ---
 layout: smell
-group: Object-Orientation Abuser
-title: Switch Statement
-image: switchStatement.png
+group: Bloaters
+title: Primitive Obsession
+image: primitiveObsession.png
 ---
 Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
 ## Example
