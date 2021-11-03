@@ -116,7 +116,8 @@ code, code * {
 	color: white;
 	border-radius: 20px;
 	margin-top: 10px;
-	white-space: pre
+	white-space: pre;
+	overflow: scroll;
 }
 
 #path {
