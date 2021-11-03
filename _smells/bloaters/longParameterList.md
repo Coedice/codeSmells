@@ -4,7 +4,7 @@ group: Bloaters
 title: Long Parameter List
 image: longParameterList.png
 ---
-Long Parameter Lists are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
+Long Parameter Lists are methods that have many arguments. This could be a sign that the method is responsible for too many tasks, or that the input data is poorly organised.
 ## Example
     def long(self, …):
         ⋮
