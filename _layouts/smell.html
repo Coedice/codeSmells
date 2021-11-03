@@ -6,7 +6,7 @@ layout: default
 </p>
 <div id="smellDefinition">
 	<div id="smellHeading">
-		<img alt="{{ page.title }} icon" src="assets/images/smellIcons/{{ page.image }}"/>
+		<img alt="{{ page.title }} icon" src="{{ '/assets/images/smellIcons' | relative_url }}/{{ page.image }}"/>
 		<h1>{{ page.title }}</h1>
 	</div>
 	{{ content }}
