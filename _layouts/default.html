@@ -12,7 +12,7 @@
 		<!-- Styles -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="theme-color" content="#1c1c1c">
-		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
 
 		<!-- Icons-->
 		{% include icons.html %}
@@ -20,24 +20,24 @@
 	<body>
 		<div id="main">
 			<h1 id="heading">
-				<a href="{{ '/' | relative_url }}">Code Smells</a>
+				<a href="{{ '/' | absolute_url }}">Code Smells</a>
 			</h1>
 			{{ content }}
 			<div id="bookList">
 				<h2>Books about code smells</h2>
 				<p>Learn to write better smelling code.</p>
 				<div class="book">
-					<img src="{{ '/assets/images/books/refactoring.jpg' | relative_url }}" alt="Refactoring: Improving the Design of Existing Code book cover"/>
+					<img src="{{ '/assets/images/books/refactoring.jpg' | absolute_url }}" alt="Refactoring: Improving the Design of Existing Code book cover"/>
 					<p>Refactoring: Improving the Design of Existing Code</p>
 					<a href="https://www.amazon.com.au/Refactoring-Martin-Fowler/dp/0134757599/ref=sr_1_3" rel="nofollow">More info</a>
 				</div>
 				<div class="book">
-					<img src="{{ '/assets/images/books/codeSmells.jpg' | relative_url }}" alt="Code smells book cover"/>
+					<img src="{{ '/assets/images/books/codeSmells.jpg' | absolute_url }}" alt="Code smells book cover"/>
 					<p>Code smells</p>
 					<a href="https://www.amazon.com.au/Code-smells-Dr-Sharanpreet-Kaur/dp/6203202150/ref=sr_1_7" rel="nofollow">More info</a>
 				</div>
 				<div class="book">
-					<img src="{{ '/assets/images/books/cleanCode.jpg' | relative_url }}" alt="Clean Code: A Handbook of Agile Software Craftsmanship book cover"/>
+					<img src="{{ '/assets/images/books/cleanCode.jpg' | absolute_url }}" alt="Clean Code: A Handbook of Agile Software Craftsmanship book cover"/>
 					<p>Clean Code: A Handbook of Agile Software Craftsmanship</p>
 					<a href="https://www.amazon.com.au/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1" rel="nofollow">More info</a>
 				</div>

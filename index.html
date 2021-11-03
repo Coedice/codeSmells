@@ -9,26 +9,32 @@ layout: default
 <h2 id="bloaters">Bloaters</h2>
 <p>A <b>Bloater</b> smell represents a code element that has grown so large that it cannot be effectively handled.</p>
 <div class="smellList">
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/longMethod.png" alt="Long Method icon" />
-		Long Method
-	</a>
-	<a href="largeClass.html">
-		<img src="assets/images/smellIcons/largeClass.png" alt="Large Class icon" />
-		Large Class
-	</a>
-	<a href="primitiveObsession.html">
-		<img src="assets/images/smellIcons/primitiveObsession.png" alt="Primitive Obsession icon" />
-		Primitive Obsession
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/longParameterList.png" alt="Long Method icon" />
-		Long Parameter List
-	</a>
-	<a href="_smells/bloater/longMethod.md">
-		<img src="assets/images/smellIcons/dataClump.png" alt="Long Method icon" />
-		Data Clump
-	</a>
+	{% for smell in site.smells %}
+		<a href="{{ smell.url }}">
+			<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
+			{{ smell.title }}
+		</a>
+	{% endfor %}
+<!--	<a href="_smells/bloater/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/longMethod.png" alt="Long Method icon" />-->
+<!--		Long Method-->
+<!--	</a>-->
+<!--	<a href="largeClass.html">-->
+<!--		<img src="assets/images/smellIcons/largeClass.png" alt="Large Class icon" />-->
+<!--		Large Class-->
+<!--	</a>-->
+<!--	<a href="primitiveObsession.html">-->
+<!--		<img src="assets/images/smellIcons/primitiveObsession.png" alt="Primitive Obsession icon" />-->
+<!--		Primitive Obsession-->
+<!--	</a>-->
+<!--	<a href="_smells/bloater/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/longParameterList.png" alt="Long Method icon" />-->
+<!--		Long Parameter List-->
+<!--	</a>-->
+<!--	<a href="_smells/bloater/longMethod.md">-->
+<!--		<img src="assets/images/smellIcons/dataClump.png" alt="Long Method icon" />-->
+<!--		Data Clump-->
+<!--	</a>-->
 </div>
 <h2 id="objectOrientationAbusers">Object-Orientation Abusers</h2>
 <p>An <b>Object-Orientation Abuser</b> smell occurs when code does not take full advantage of object-oriented design.</p>
