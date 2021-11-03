@@ -31,8 +31,6 @@ groups:
 	<i>noun</i>
 	<p>A characteristic of computer code that may indicate a deeper flaw.</p>
 </div>
-
-
 {% for group in page.groups %}
 	<h2 id="{{ group.name }}">{{ group.name }}</h2>
 	<p>{{ group.description }}</p>
@@ -41,116 +39,9 @@ groups:
 			{% if smell.group == group.name %}
 			<a href="{{ smell.url | absolute_url }}">
 				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
-				{{ smell.title }}
+				{{ smell.title | markdownify  }}
 			</a>
 			{% endif %}
 		{% endfor %}
 	</div>
 {% endfor %}
-
-<!--<h2 id="Bloaters">Bloaters</h2>-->
-<!--<p>A <b>Bloater</b> smell represents a code element that has grown so large that it cannot be effectively handled.</p>-->
-<!--<div class="smellList">-->
-<!--	{% for smell in site.smells %}-->
-<!--		{% if smell.group == "Bloater" %}-->
-<!--			<a href="{{ smell.url | absolute_url }}">-->
-<!--				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />-->
-<!--				{{ smell.title }}-->
-<!--			</a>-->
-<!--		{% endif %}-->
-<!--	{% endfor %}-->
-<!--</div>-->
-
-
-
-<!--<h2 id="Object-Orientation Abusers">Object-Orientation Abusers</h2>-->
-<!--<p>An <b>Object-Orientation Abuser</b> smell occurs when code does not take full advantage of object-oriented design.</p>-->
-<!--<div class="smellList">-->
-<!--	{% for smell in site.smells %}-->
-<!--		{% if smell.group == "Object-Orientation Abuser" %}-->
-<!--			<a href="{{ smell.url | absolute_url }}">-->
-<!--				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />-->
-<!--				{{ smell.title }}-->
-<!--			</a>-->
-<!--		{% endif %}-->
-<!--	{% endfor %}-->
-<!--</div>-->
-
-
-<!--<h2 id="Change Preventers">Change Preventers</h2>-->
-<!--<div class="smellList">-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/divergentChange.png" alt="Long Method icon" />-->
-<!--		Divergent Change-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/shotgunSurgery.png" alt="Long Method icon" />-->
-<!--		Shotgun Surgery-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/parallelInheritanceHierarchies.png" alt="Long Method icon" />-->
-<!--		Parallel Inheritance Hierarchies-->
-<!--	</a>-->
-<!--</div>-->
-<!--<h2 id="Dispensables">Dispensables</h2>-->
-<!--<div class="smellList">-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/lazyClass.png" alt="Long Method icon" />-->
-<!--		Lazy Class-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/dataClass.png" alt="Long Method icon" />-->
-<!--		Data Class-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/duplicateCode.png" alt="Long Method icon" />-->
-<!--		Duplicate Code-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/deadCode.png" alt="Long Method icon" />-->
-<!--		Dead Code-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/speculativeGenerality.png" alt="Long Method icon" />-->
-<!--		Speculative Generality-->
-<!--	</a>-->
-<!--</div>-->
-<!--<h2 id="Couplers">Couplers</h2>-->
-<!--<div class="smellList">-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/featureEnvy.png" alt="Long Method icon" />-->
-<!--		Feature Envy-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/inappropriateIntimacy.png" alt="Long Method icon" />-->
-<!--		Inappropriate Intimacy-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/messageChain.png" alt="Long Method icon" />-->
-<!--		Message Chain-->
-<!--	</a>-->
-<!--	<a href="_smells/bloaters/longMethod.md">-->
-<!--		<img src="assets/images/smellIcons/middleMan.png" alt="Long Method icon" />-->
-<!--		Middle Man-->
-<!--	</a>-->
-</div>
-<div id="bookList">
-	<h2>Books about code smells</h2>
-	<p>Learn to write better smelling code.</p>
-	<a class="book" href="https://www.amazon.com.au/Refactoring-Martin-Fowler/dp/0134757599/ref=sr_1_3" rel="nofollow">
-		<img src="assets/images/books/refactoring.jpg" alt="Refactoring: Improving the Design of Existing Code book cover" />
-		<p>Refactoring: Improving the Design of Existing Code</p>
-	</a>
-	<a class="book" href="https://www.amazon.com.au/Code-smells-Dr-Sharanpreet-Kaur/dp/6203202150/ref=sr_1_7" rel="nofollow">
-		<img src="assets/images/books/codeSmells.jpg" alt="Code smells book cover" />
-		<p>Code smells: A Predictor Of Remarkable Quality Improvement</p>
-	</a>
-	<a class="book" href="https://www.amazon.com.au/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1" rel="nofollow">
-		<img src="assets/images/books/cleanCode.jpg" alt="Clean Code: A Handbook of Agile Software Craftsmanship book cover" />
-		<p>Clean Code: A Handbook of Agile Software Craftsmanship</p>
-	</a>
-	<div id="affiliate">I receive a commission on sales made from the above affiliate links.</div>
-</div>
-<p id="footer">
-	&copy; 2021 <a href="https://gavindou.ch" rel="author">Gavin Douch</a>
-</p>
