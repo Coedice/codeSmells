@@ -4,14 +4,14 @@ group: Bloaters
 title: Large Class
 image: largeClass.png
 ---
-Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
+Large Classes are classes that span too many lines. When a class gets too long, perhaps it is responsible for more tasks than it should be, or could be further generalised and inherited from.
 ## Example
-    def longMethod(self):
-        # Do first thing
-        &vellip;
-        
-        # Do second thing
-        &vellip;
-        
-        # Do third thing
-        &vellip;</code>
+    class Large:
+        # Class variables
+        ⋮
+
+        def __init__(self):
+            ⋮
+
+        # Methods
+        ⋮

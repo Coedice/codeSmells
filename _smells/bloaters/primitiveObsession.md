@@ -4,14 +4,21 @@ group: Bloaters
 title: Primitive Obsession
 image: primitiveObsession.png
 ---
-Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
+Primitive Obsession is the overuse of primitives, rather than classes that make use of those primitives. When this data is used or manipulated, this must be done in another class' method.
 ## Example
-    def longMethod(self):
-        # Do first thing
-        &vellip;
+    dollars = 28.27
+    cents = int(dollars * 100 % 100)
+    print(cents)
+
+    # Improvement
+    class Money():
+        def __init(self, dollars):
+            self.dollars = dollars
         
-        # Do second thing
-        &vellip;
+        def get_cents(self):
+            return int(self.dollars * 100 % 100)
+
+    dollars = Money(28.27)
+    cents = dollars.get_cents()
+    print(cents)
         
-        # Do third thing
-        &vellip;</code>
