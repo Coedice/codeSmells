@@ -1,4 +1,4 @@
 collections:
   smells:
     output: true
-    permalink: /:name
+    permalink: /:group/:name
