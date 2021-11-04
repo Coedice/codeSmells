@@ -26,7 +26,7 @@
 			<div id="bookList">
 				<h2>Books about code smells</h2>
 				<p>Learn to write better smelling code.</p>
-				{% for book in site.data.members %}
+				{% for book in site.data.books %}
 					<a href="{{ book.link }}" target="_blank" rel="nofollow" class="book">
 						<img src="{{ '/assets/images/books' | absolute_url }}/{{ book.image }}" alt="{{ book.title }} book cover" />
 						<p>{{ book.title }}</p>
