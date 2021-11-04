@@ -109,15 +109,15 @@ h2 {
 }
 
 code, code * {
-	display: block;
-	font-family: Menlo, Courier, monospace;
-	padding: 20px;
-	background-color: #262b33;
-	color: white;
-	border-radius: 20px;
-	margin-top: 10px;
-	white-space: pre;
-	overflow: scroll;
+	/*display: block;*/
+	/*font-family: Menlo, Courier, monospace;*/
+	/*padding: 20px;*/
+	/*background-color: #262b33;*/
+	/*color: white;*/
+	/*border-radius: 20px;*/
+	/*margin-top: 10px;*/
+	/*white-space: pre;*/
+	/*overflow: scroll;*/
 }
 
 #path {
