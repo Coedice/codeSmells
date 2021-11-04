@@ -6,6 +6,7 @@ layout: default
 	<i>noun</i>
 	<p>A characteristic of computer code that may indicate a deeper flaw.</p>
 </div>
+<p>The following code smells are from the <a href="https://link.springer.com/article/10.1007/s10664-006-9002-8" rel="external">M&auml;ntyl&auml;-Lassenius taxonomy</a>.</p>
 {% for group in site.data.groups %}
 	<h2 id="{{ group.name }}">{{ group.name }}</h2>
 	<p>{{ group.description | markdownify }}</p>
