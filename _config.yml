@@ -2,3 +2,5 @@ collections:
   smells:
     output: true
     permalink: /:path
+  books:
+    output: false
