@@ -1,18 +1,3 @@
----
-books:
--
-  title: Refactoring: Improving the Design of Existing Code
-  link: https://www.amazon.com.au/Refactoring-Martin-Fowler/dp/0134757599/ref=sr_1_3
-  image: refactoring.jpg
--
-  title: Code smells: A Predictor of Remarkable Quality Improvement
-  link: https://www.amazon.com.au/Code-smells-Dr-Sharanpreet-Kaur/dp/6203202150/ref=sr_1_7
-  image: codeSmells.jpg"
--
-  title: Clean Code: A Handbook of Agile Software Craftsmanship
-  link: https://www.amazon.com.au/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1
-  image: cleanCode.jpg
----
 <html lang="en">
 	<head>
 		<!-- Standard Metadata-->
@@ -41,7 +26,7 @@ books:
 			<div id="bookList">
 				<h2>Books about code smells</h2>
 				<p>Learn to write better smelling code.</p>
-				{% for book in books %}
+				{% for book in site.data.members %}
 					<a href="{{ book.link }}" target="_blank" rel="nofollow" class="book">
 						<img src="{{ '/assets/images/books' | absolute_url }}/{{ book.image }}" alt="{{ book.title }} book cover" />
 						<p>{{ book.title }}</p>
