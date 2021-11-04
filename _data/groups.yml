@@ -1,0 +1,19 @@
+- name: Bloaters
+  description: |-
+    A **Bloater** smell represents a code element that has grown so large that it cannot be effectively handled.
+
+- name: Object-Orientation Abusers
+  description: |-
+    An **Object-Orientation Abuser** smell occurs when code does not take full advantage of object-oriented design.
+
+- name: Change Preventers
+  description: |-
+    **Change Preventer** smells inhibit future development and modification of code.
+
+- name: Dispensables
+  description: |-
+    **Dispensable** smells are unnecessary code that causes clutter in your codebase.
+
+- name: Couplers
+  description: |-
+    A **Coupler** smell represents high degrees of dependency between different parts of the codebase.

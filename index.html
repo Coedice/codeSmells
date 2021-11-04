@@ -1,34 +1,12 @@
 ---
 layout: default
-
-groups:
--
-  name: "Bloaters"
-  description: |-
-    A **Bloater** smell represents a code element that has grown so large that it cannot be effectively handled.
--
-  name: "Object-Orientation Abusers"
-  description: |-
-    An **Object-Orientation Abuser** smell occurs when code does not take full advantage of object-oriented design.
--
-  name: "Change Preventers"
-  description: |-
-    **Change Preventer** smells inhibit future development and modification of code.
--
-  name: "Dispensables"
-  description: |-
-    **Dispensable** smells are unnecessary code that causes clutter in your codebase.
--
-  name: "Couplers"
-  description: |-
-    A **Coupler** smell represents high degrees of dependency between different parts of the codebase.
 ---
 <div id="definition">
 	<h2>Code smell <span id="pronunciation">/k&#601;&#650;d sm&#603;l/</span></h2>
 	<i>noun</i>
 	<p>A characteristic of computer code that may indicate a deeper flaw.</p>
 </div>
-{% for group in page.groups %}
+{% for group in site.data.groups %}
 	<h2 id="{{ group.name }}">{{ group.name }}</h2>
 	<p>{{ group.description | markdownify }}</p>
 	<div class="smellList">
