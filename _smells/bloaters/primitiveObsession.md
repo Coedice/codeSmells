@@ -4,7 +4,7 @@ group: Bloaters
 title: Primitive Obsession
 image: primitiveObsession.png
 ---
-Primitive Obsession is the overuse of primitives, rather than classes that make use of those primitives. When this data is used or manipulated, this must be done in another class' method.
+Primitive Obsession is the overuse of primitives, rather than classes that make use of those primitives. The issue that this causes is that common functionality that uses this data must be coded elsewhere, and is not associated with the data itself.
 ## Example
     # Primitive Obsession
     dollars = 28.27
