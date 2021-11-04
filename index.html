@@ -14,7 +14,7 @@ layout: default
 		{% for smell in site.smells %}
 			{% if smell.group == group.name %}
 				<a href="{{ smell.url | absolute_url }}">
-					<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
+					<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} code smell icon" />
 					{{ smell.title }}
 				</a>
 			{% endif %}
