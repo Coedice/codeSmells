@@ -34,10 +34,10 @@ groups:
 	<div class="smellList">
 		{% for smell in site.smells %}
 			{% if smell.group == group.name %}
-			<a href="{{ smell.url | absolute_url }}">
-				<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
-				{{ smell.title }}
-			</a>
+				<a href="{{ smell.url | absolute_url }}">
+					<img src="{{ '/assets/images/smellIcons' | absolute_url }}/{{ smell.image }}" alt="{{ smell.title }} icon" />
+					{{ smell.title }}
+				</a>
 			{% endif %}
 		{% endfor %}
 	</div>
