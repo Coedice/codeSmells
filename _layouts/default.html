@@ -24,11 +24,11 @@
 				<a href="{{ '/' | absolute_url }}">Code Smells</a>
 			</h1>
 			{{ content }}
-			<div id="bookList">
+			<div id="bookSection">
 				<h2>Books about code smells</h2>
 				<p>Learn to write better smelling code.</p>
 				{% for book in site.data.books %}
-					<a href="{{ book.link }}" target="_blank" rel="nofollow" class="book">
+					<a href="{{ book.link }}" target="_blank" rel="nofollow">
 						<img src="{{ '/assets/images/books' | absolute_url }}/{{ book.image }}" alt="{{ book.title }} book cover" />
 						<p>{{ book.title }}</p>
 					</a>

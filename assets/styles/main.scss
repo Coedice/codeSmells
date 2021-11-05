@@ -18,13 +18,6 @@ body {
   font-weight: 100;
 }
 
-#pronunciation {
-  font-size: 0.7em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: $element_background;
-}
-
 #main {
   max-width: 800px;
   margin: auto;
@@ -58,6 +51,13 @@ h1, h2, h3 {
 	font-size: 24px;
 	margin: 0 0 10px 0;
 	text-decoration: none;
+
+	#pronunciation {
+	  font-size: 0.7em;
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-weight: normal;
+	  color: $element_background;
+	}
   }
 
   p {
@@ -152,7 +152,7 @@ code, code * {
   }
 }
 
-#bookList {
+#bookSection {
   display: flex;
   border-top: 1px solid $border_color;
   border-bottom: 1px solid $border_color;
@@ -165,38 +165,32 @@ code, code * {
 	flex: 0 0 100%;
 	margin: 0 0 25px;
   }
-}
 
-.book {
-  width: 27%;
-  border: 1px solid $border_color;
-  padding: 15px;
-  border-radius: 10px;
-  display: block;
-  background-color: $element_background;
-  text-decoration: none;
-
-  &:hover {
-	background: $element_background_hover;
-	border: 1px solid black;
-	text-decoration: underline;
-  }
-
-  img {
-	display: inline-flex;
-	height: auto;
-	width: 100%;
-  }
-
-  p {
-	font-weight: bold;
-	font-size: 95%;
-	margin: 0 0 0 0;
-  }
-
-  a {
+  > a {
+	width: 27%;
+	border: 1px solid $border_color;
+	padding: 15px;
+	border-radius: 10px;
 	display: block;
-	font-size: 90%;
+	background-color: $element_background;
+	text-decoration: none;
+
+	&:hover {
+	  background: $element_background_hover;
+	  border: 1px solid black;
+	}
+
+	> img {
+	  display: inline-flex;
+	  height: auto;
+	  width: 100%;
+	}
+
+	> p {
+	  font-weight: bold;
+	  font-size: 95%;
+	  margin: 0 0 0 0;
+	}
   }
 }
 
@@ -224,7 +218,7 @@ code, code * {
 	width: calc(100% - 26px);
   }
 
-  .book {
+  #bookList > a {
 	width: 100%;
 	margin-bottom: 15px;
 
