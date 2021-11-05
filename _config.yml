@@ -5,3 +5,8 @@ collections:
 
 sass:
   style: compressed
+
+timezone: Australia/Melbourne
+
+plugins:
+  - jekyll-seo-tag
