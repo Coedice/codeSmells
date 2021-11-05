@@ -14,7 +14,7 @@ plugins:
 # SEO
 title: Code Smells
 tagline: Write better smelling code
-description: Indicators of poor code design
+description: Learn to write less smelly code
 author: Gavin Douch
 twitter:
   username: GavinDouch
