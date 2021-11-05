@@ -6,20 +6,21 @@ image: primitiveObsession.png
 ---
 Primitive Obsession is the overuse of primitives, rather than classes that make use of those primitives. The issue that this causes is that common functionality that uses this data must be coded elsewhere, and is not associated with the data itself.
 ## Example
-    # Primitive Obsession
-    dollars = 28.27
-    cents = int(dollars * 100 % 100)
-    print(cents)
+~~~ python
+# Primitive Obsession
+dollars = 28.27
+cents = int(dollars * 100 % 100)
+print(cents)
 
-    # Improvement
-    class Money():
-        def __init__(self, dollars):
-            self.dollars = dollars
-        
-        def get_cents(self):
-            return int(self.dollars * 100 % 100)
+# Improvement
+class Money():
+    def __init__(self, dollars):
+        self.dollars = dollars
+    
+    def get_cents(self):
+        return int(self.dollars * 100 % 100)
 
-    dollars = Money(28.27)
-    cents = dollars.get_cents()
-    print(cents)
-        
+dollars = Money(28.27)
+cents = dollars.get_cents()
+print(cents)
+~~~

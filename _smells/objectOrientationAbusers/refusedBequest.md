@@ -4,14 +4,12 @@ group: Object-Orientation Abusers
 title: Refused Bequest
 image: refusedBequest.png
 ---
-Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
+Data clumps are sets of related primitives that always appear together. Data clubs should instead be encapsulated in a class.
 ## Example
-    def longMethod(self):
-        # Do first thing
-        &vellip;
-        
-        # Do second thing
-        &vellip;
-        
-        # Do third thing
-        &vellip;</code>
+~~~ python
+x_coordinate = 4
+y_coordinate = -7
+z_coordinate = 43
+
+print(distance(x_coordinate, y_coordinate, z_coordinate))
+~~~
