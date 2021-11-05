@@ -2,3 +2,6 @@ collections:
   smells:
     output: true
     permalink: /:path
+
+sass:
+  style: compressed
