@@ -1,0 +1,235 @@
+$black: black;
+$element_background: #f9f9f9;
+$element_background_hover: #f5f5f5;
+$border_color: #eee;
+$light_text_color: #606060;
+
+* {
+  font-family: "Times New Roman", "Times", serif;
+  color: black
+}
+
+body {
+  font-size: 13pt;
+  margin: 20px 0 0 0;
+  line-height: 31px;
+  font-weight: 100;
+}
+
+#pronunciation {
+  font-size: 0.7em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: $element_background;
+}
+
+#main {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px 0;
+  font-weight: 100;
+}
+
+#heading {
+  border-bottom: 1px solid $border_color;
+  padding: 0 0 20px 0;
+  font-size: 54px;
+  text-align: center;
+  margin: 30px 0 20px 0;
+
+  a {
+	text-decoration: none;
+  }
+}
+
+#definition {
+  background: $element_background;
+  padding: 20px;
+  border: 1px solid $border_color;
+  line-height: 20px;
+  border-radius: 10px;
+
+  h2 {
+	font-size: 24px;
+	margin: 0 0 10px 0;
+	text-decoration: none;
+  }
+
+  p {
+	line-height: 30px;
+	margin: 10px 0 0;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  margin: 40px 0 0 0;
+}
+
+.smellList {
+  display: block;
+
+  a {
+	margin: 0 0 10px 0;
+	width: calc(50% - 26px);
+	font-weight: 100;
+	font-size: 90%;
+	background: $element_background;
+	display: inline-flex;
+	color: #333;
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border-left: 1px solid #999;
+	line-height: 35px;
+
+	&:nth-child(odd) {
+	  margin-right: 5px;
+	}
+
+	&:hover {
+	  color: $black;
+	  background: $element_background_hover;
+	  border-left: 1px solid $black;
+	}
+
+	img {
+	  width: 35px;
+	  height: 35px;
+	  margin-right: 10px;
+	  image-rendering: pixelated;
+	}
+  }
+}
+
+#footer {
+  text-align: center;
+  margin: 70px 0 50px 0;
+}
+
+#footer, #footer a {
+  color: $light_text_color;
+}
+
+code, code * {
+  display: block;
+  font-family: Menlo, Courier, monospace;
+  padding: 20px;
+  background-color: #262b33;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  white-space: pre;
+  overflow: scroll;
+}
+
+#path {
+  font-size: 80%;
+	padding: 5px;
+}
+
+#path, #path * {
+  color: $light_text_color;
+}
+
+#smellHeading {
+  display: flex;
+
+  img {
+	width: 75px;
+	height: 75px;
+	margin-right: 15px;
+	image-rendering: pixelated;
+  }
+
+  h1 {
+	line-height: 75px;
+	margin: 0;
+  }
+}
+
+#bookList {
+  display: flex;
+  border-top: 1px solid $border_color;
+  border-bottom: 1px solid $border_color;
+  padding: 25px 0 35px 0;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > p {
+	flex: 0 0 100%;
+	margin: 0 0 25px;
+  }
+}
+
+.book {
+  width: 27%;
+  border: 1px solid $border_color;
+  padding: 15px;
+  border-radius: 10px;
+  display: block;
+  background-color: $element_background;
+  text-decoration: none;
+
+  &:hover {
+	background: $element_background_hover;
+	border: 1px solid black;
+	text-decoration: underline;
+  }
+
+  img {
+	display: inline-flex;
+	height: auto;
+	width: 100%;
+  }
+
+  p {
+	font-weight: bold;
+	font-size: 95%;
+	margin: 0 0 0 0;
+  }
+
+  a {
+	display: block;
+	font-size: 90%;
+  }
+}
+
+#affiliate {
+	display: block;
+	margin-top: 35px;
+	font-size: 85%;
+	line-height: 115%;
+	font-style: italic;
+	color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+	display: block;
+	margin: 15px;
+	border-width: 0;
+  }
+
+  #heading {
+	line-height: 100%;
+  }
+
+  .smellList a {
+	width: calc(100% - 26px);
+  }
+
+  .book {
+	width: 100%;
+	margin-bottom: 15px;
+
+	img {
+	  height: auto;
+	  width: 100%;
+	}
+  }
+}
+
