@@ -10,3 +10,20 @@ timezone: Australia/Melbourne
 
 plugins:
   - jekyll-seo-tag
+
+# SEO
+title: Code Smells
+tagline: Write better smelling code
+description: Indicators of poor code design
+author: Gavin Douch
+twitter:
+  username: GavinDouch
+  card: summary
+logo: /assets/images/logo.png
+social:
+  name: Gavin Douch
+  links:
+    - https://twitter.com/GavinDouch
+    - https://www.linkedin.com/in/gavin-douch-a77259117/
+    - https://github.com/Coedice
+locale: en-AU
