@@ -158,7 +158,6 @@ code, code * {
 
 #bookList p {
 	flex: 0 0 100%;
-	margin: 0 0 25px;
 }
 
 .book {
