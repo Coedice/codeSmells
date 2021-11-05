@@ -88,7 +88,7 @@ h2 {
 .smellList a:hover {
 	color: #000;
 	background: #f5f5f5;
-	border-left: 1px solid black;
+	border-left: 1px solid #3a7dcf;
 }
 
 .smellList a img {
@@ -174,7 +174,7 @@ code, code * {
 .book:hover {
 	/*color: #3a7dcf;*/
 	background: #f5f5f5;
-	border: 1px solid #0063de;
+	border: 1px solid #3a7dcf;
 	text-decoration: underline;
 }
 
