@@ -3,14 +3,16 @@ collections:
     output: true
     permalink: /:path
 
-sass:
-  style: compressed
-
 timezone: Australia/Melbourne
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-minifier
+
+# SCSS
+sass:
+  style: compressed
 
 # SEO
 title: Code Smells
