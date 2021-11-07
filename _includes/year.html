@@ -1,7 +1,5 @@
----
----
 <script type="text/javascript">
   var d = new Date()
   document.write(d.getFullYear())
 </script>
-<noscript>{{ site.time | date: '%Y' }}</noscript>
+<noscript>{{- site.time | date: '%Y' -}}</noscript>

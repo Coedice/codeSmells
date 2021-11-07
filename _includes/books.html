@@ -4,7 +4,7 @@
 	{%- for book in site.data.books -%}
 		<a href="{{ book.link }}" target="_blank" rel="nofollow">
 			<img src="{{ '/assets/images/books' | absolute_url }}/{{ book.image }}" alt="{{ book.title }} book cover" />
-			<p>{{ book.title }}</p>
+			<p>{{- book.title -}}</p>
 		</a>
 	{%- endfor -%}
 	<div id="affiliate">I receive a commission on sales made from the above affiliate links.</div>
