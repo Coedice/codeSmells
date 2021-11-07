@@ -17,7 +17,8 @@ sass:
 title: Code Smells
 tagline: Write better smelling code
 description: Learn to write less smelly code
-author: Gavin Douch
+author:
+  twitter: GavinDouch
 twitter:
   username: GavinDouch
   card: summary
@@ -28,4 +29,5 @@ social:
     - https://twitter.com/GavinDouch
     - https://www.linkedin.com/in/gavin-douch-a77259117/
     - https://github.com/Coedice
+    - https://gavindou.ch
 locale: en-AU
