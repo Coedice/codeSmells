@@ -27,4 +27,4 @@ The issue that this causes is that common functionality that uses this data must
 
 A Primitive Obsession is often a result of the programmer's desire not to create a small class, but having small classes is not itself a bad thing.
 
-Primitive Obsessions are also often [Data Clumps](dataClump.md).
+Primitive Obsessions are also often [Data Clumps](dataClump).

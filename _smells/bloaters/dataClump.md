@@ -12,6 +12,6 @@ z_coordinate = 43
 
 print(distance(x_coordinate, y_coordinate, z_coordinate))
 ~~~
-The problem with Data Clumps, is that it is not easy to centrally control their behaviour. In the above example, if we wanted to restrict `y` coordinates to positive numbers only, we may need to edit the code in many places, leading to [Shotgun Surgery](../changePreventers/shotgunSurgery.md).
+The problem with Data Clumps, is that it is not easy to centrally control their behaviour. In the above example, if we wanted to restrict `y` coordinates to positive numbers only, we may need to edit the code in many places, leading to [Shotgun Surgery](../changePreventers/shotgunSurgery).
 
-Data Clumps are also often [Primitive Obsessions](primitiveObsession.md).
+Data Clumps are also often [Primitive Obsessions](primitiveObsession).
