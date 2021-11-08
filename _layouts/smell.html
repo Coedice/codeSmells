@@ -2,7 +2,7 @@
 layout: default
 ---
 <p id="path">
-	<a href="{{ '/' | absolute_url }}">Code Smells</a> / <a href="{{ '/' | absolute_url }}#{{ page.group | cgi_escape }}">{{- page.group -}}</a> / {{- page.title -}}
+	<a href="{{ '/' | absolute_url }}">Code Smells</a> / <a href="{{ '/' | absolute_url }}#{{ page.group | cgi_escape }}">{{- page.group -}}</a> / {{ page.title -}}
 </p>
 <div id="smellDefinition">
 	<div id="smellHeading">
