@@ -4,8 +4,7 @@ group: Bloaters
 title: Primitive Obsession
 image: primitiveObsession.png
 ---
-Primitive Obsession is the overuse of primitives, rather than classes that make use of those primitives. The issue that this causes is that common functionality that uses this data must be coded elsewhere, and is not associated with the data itself.
-## Example
+Primitive Obsession is the overuse of a primative (eg. `1`, `3.14`, `"Hello"`, `False`), rather than classes that make use of those primitives.
 ~~~ python
 # Primitive Obsession
 dollars = 28.27
@@ -24,3 +23,8 @@ dollars = Money(28.27)
 cents = dollars.get_cents()
 print(cents)
 ~~~
+The issue that this causes is that common functionality that uses this data must be coded in different places in the codebase, and is not tied to the data itself.
+
+A Primitive Obsession is often a result of the programmer's desire not to create a small class, but having small classes is not itself a bad thing.
+
+Primitive Obsessions are also often [Data Clumps](dataClump.md).
