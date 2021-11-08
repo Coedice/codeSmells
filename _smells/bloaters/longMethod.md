@@ -6,7 +6,7 @@ image: longMethod.png
 ---
 Long Methods are methods that span too many lines. When a method gets too long, perhaps it is responsible for more tasks than it should be.
 ~~~ python
-def long(self):
+def long_method(self):
     # Do first thing
     
     # Do second thing

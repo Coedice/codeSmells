@@ -4,7 +4,7 @@ group: Bloaters
 title: Primitive Obsession
 image: primitiveObsession.png
 ---
-Primitive Obsession is the overuse of a primative (eg. `1`, `3.14`, `"Hello"`, `False`), rather than classes that make use of those primitives.
+Primitive Obsessions are the overuse of primitives (eg. `1`, `3.14`, `"Hello"`, `False`), rather than classes that make use of those primitives.
 ~~~ python
 # Primitive Obsession
 dollars = 28.27
