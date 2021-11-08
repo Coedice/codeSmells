@@ -4,8 +4,7 @@ group: Change Preventers
 title: Divergent Change
 image: divergentChange.png
 ---
-Data clumps are sets of related primitives that always appear together. Data clubs should instead be encapsulated in a class.
-## Example
+Divergent Change smells occur when a single class needs to be edited often in order to be compatible with changes made outside the class.
 ~~~ python
 x_coordinate = 4
 y_coordinate = -7
