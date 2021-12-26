@@ -4,12 +4,6 @@ group: Couplers
 title: Message Chain
 image: messageChain.png
 ---
-Data clumps are sets of related primitives that always appear together. Data clubs should instead be encapsulated in a class.
-## Example
-~~~ python
-x_coordinate = 4
-y_coordinate = -7
-z_coordinate = 43
+Message Chains occur when a class (class A), in order to get some data from class D, must access class B and use it to access class C, and use class C to access class D.
 
-print(distance(x_coordinate, y_coordinate, z_coordinate))
-~~~
+The reason to avoid this is that class A becomes reliant on the implementation of the in-between classes (classes B and C). 

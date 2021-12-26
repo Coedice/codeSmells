@@ -4,12 +4,6 @@ group: Couplers
 title: Middle Man
 image: middleMan.png
 ---
-Data clumps are sets of related primitives that always appear together. Data clubs should instead be encapsulated in a class.
-## Example
-~~~ python
-x_coordinate = 4
-y_coordinate = -7
-z_coordinate = 43
+A Middle Man is a class that in responsible, principally, for delegation.
 
-print(distance(x_coordinate, y_coordinate, z_coordinate))
-~~~
+A class with a Middle Man smell increases the complexity of the code without contributing the program's function, as well as allows code to avoid logical flows of data based the relationship between classes.

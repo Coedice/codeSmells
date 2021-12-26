@@ -4,12 +4,8 @@ group: Couplers
 title: Inappropriate Intimacy
 image: inappropriateIntimacy.png
 ---
-Data clumps are sets of related primitives that always appear together. Data clubs should instead be encapsulated in a class.
-## Example
-~~~ python
-x_coordinate = 4
-y_coordinate = -7
-z_coordinate = 43
+Inappropriate Intimacy occurs when two classes are tightly linked to one another.
 
-print(distance(x_coordinate, y_coordinate, z_coordinate))
-~~~
+This is an indication that the classes should be merged, that some functionality belongs in a superclass of both original classes, or that the functionality belongs in an unrelated class.
+
+Inappropriate Intimacy is a class overly reliant on another class, for a method overly reliant on a class, check out [feature Envy](featureEnvy).

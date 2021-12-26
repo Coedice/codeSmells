@@ -4,12 +4,8 @@ group: Couplers
 title: Feature Envy
 image: featureEnvy.png
 ---
-Data clumps are sets of related primitives that always appear together. Data clubs should instead be encapsulated in a class.
-## Example
-~~~ python
-x_coordinate = 4
-y_coordinate = -7
-z_coordinate = 43
+Feature Envy occurs when a method is overly reliant on another class.
 
-print(distance(x_coordinate, y_coordinate, z_coordinate))
-~~~
+This is an indication that the feature of the other class could be defined in a better location, such as in the envious method's class, a super class of both classes, or another unrelated class.
+
+Feature Envy is a method overly reliant on a class, for a class overly reliant on another class, check out [inappropriateIntimacy](inappropriateIntimacy).
