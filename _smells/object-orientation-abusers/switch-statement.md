@@ -7,15 +7,17 @@ image: switchStatement.png
 A Switch Statement code smell occurs whenever a switch statement is used. If instead of an actual switch statement, an `if ... else if` statement is used, this is still a Switch Statement code smell.
 
 Switch statements can be considered good design in a procedural programming paradigm, but in Object-oriented programming, switch statements are a sign that the inheritance hierarchy is bad or under-used.
-~~~ Python
+~~~ python
 # Smelly code
-vehicle = "Motorbike"
+class Vehicle:
+    def __init__(name):
+        self.name = name
 
-if vehicle == "Car":
+if vehicle.name == "Car":
     print(4)
-elif vehicle == "Motorbike":
+elif vehicle.name == "Motorbike":
     print(2)
-elif vehicle == "Tricycle":
+elif vehicle.name == "Tricycle":
     print(3)
 else:
     print("Unknown")
