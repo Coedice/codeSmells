@@ -10,4 +10,4 @@ The consequence of this is that you can easily cause errors whenever a change is
 
 The aim should be that code changes and classes should have a one-to-one relationship (each change affects only one class). Shotgun Surgery smells are one-to-many (one change affects many classes).
 
-Shotgun Surgery is the opposite of [Divergent Change](divergentChange).
+Shotgun Surgery is the opposite of [Divergent Change](divergent-change).

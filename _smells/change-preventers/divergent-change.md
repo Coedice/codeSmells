@@ -16,4 +16,4 @@ The aim should be that changes and classes should have a one-to-one relationship
 
 In principle, a class should be self-sufficient. It should not need outside code to work in a particular way.
 
-Divergent Change is the opposite of [Shotgun Surgery](shotgunSurgery).
+Divergent Change is the opposite of [Shotgun Surgery](shotgun-surgery).
