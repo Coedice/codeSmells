@@ -2,5 +2,5 @@
 	<h1 id="heading"><a href="{{ '/' | absolute_url }}">Code Smells</a></h1>
 	{{- content -}}
 	{%- include books.html -%}
-	<p id="footer">Copyright &copy; {% include year.html %} <a href="https://gavindou.ch" rel="author">Gavin Douch</a></p>
+	<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} <a href="https://gavindou.ch" rel="author">Gavin Douch</a></p>
 </div>
