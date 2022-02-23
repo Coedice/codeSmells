@@ -3,7 +3,7 @@
 	<p>Learn to write better smelling code.</p>
 	{%- for book in site.data.books -%}
 		<a href="{{ book.link }}" target="_blank" rel="nofollow">
-			<img src="{{ '/assets/images/books' | absolute_url }}/{{ book.image }}" alt="{{ book.title }} book cover" />
+			<img src="{{ '/assets/images/books' | relative_url }}/{{ book.image }}" alt="{{ book.title }} book cover" />
 			<p>{{- book.title -}}</p>
 		</a>
 	{%- endfor -%}

@@ -20,7 +20,7 @@ layout: compress
 		<meta name="language" content="english">
 		<meta name="copyright" content="Gavin Douch">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | absolute_url }}">
+		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 		{%- include icons.html -%}
 		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
 		<!-- Google Adsense -->
@@ -28,7 +28,7 @@ layout: compress
 	</head>
 	<body>
 		<div id="main">
-			<h1 id="heading"><a href="{{ '/' | absolute_url }}">Code Smells</a></h1>
+			<h1 id="heading"><a href="{{ '/' | relative_url }}">Code Smells</a></h1>
 			{{- content -}}
 			{%- include books.html -%}
 			<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} <a href="https://gavindou.ch" rel="author">Gavin Douch</a></p>
