@@ -4,25 +4,28 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Analytics-->
 		{% if jekyll.environment == "production" %}
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB1HF2YGGB"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-WB1HF2YGGB');
-			</script>
+			{% include gtag.html %}
 		{% endif %}
+
+		<!-- Generic -->
 		<meta charset="UTF-8">
-		{% seo %}
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="language" content="english">
 		<meta name="copyright" content="Gavin Douch">
+
+		<!-- SEO -->
+		{% seo %}
+		{% include icons.html %}
+
+		<!-- Styles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-		{% include icons.html %}
+
+		<!-- JavaScript -->
 		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
+
 		<!-- Google Adsense -->
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5015875745225258" crossorigin="anonymous"></script>
 	</head>
