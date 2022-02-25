@@ -20,7 +20,6 @@ Visit the website: [code-smells.com](https://code-smells.com)
 - Favicon generator: [faviconit](http://faviconit.com/en)
 - Sitemap generator: [Jekyll Sitemap Generator Plugin](https://github.com/jekyll/jekyll-sitemap)
 - HTML minifier: [Compress HTML in Jekyll](http://jch.penibelst.de)
-- Fast page navigation: [Turbolinks](https://github.com/turbolinks/turbolinks)
 
 # Security
 Visit the [security policy](https://github.com/Coedice/codeSmells/security/policy) for more information about responsible disclosures.
