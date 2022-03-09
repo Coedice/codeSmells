@@ -10,4 +10,15 @@ layout: default
 		<h1>{{ page.title }}</h1>
 	</div>
 	{{- content -}}
+	<div id="smellArrows">
+		{% for smell in site.smells %}
+			{% if page.title == smell.title %}
+				{% assign prev_smell_index = forloop.index0 | minus: 1 %}
+				{% assign next_smell_index = forloop.index0 | plus: 1 %}
+				<a href="{{ site.smells[prev_smell_index].url | relative_url }}"{% if forloop.first == true %} style="display: none"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron"></a>
+				<a href="{{ site.smells[next_smell_index].url | relative_url }}"{% if forloop.last == true %} style="display: none"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron"></a>
+				{% break %}
+			{% endif %}
+		{% endfor %}
+	</div>
 </div>
