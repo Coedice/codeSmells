@@ -8,9 +8,6 @@ A Data Class smell occurs when a class does not implement enough functionality i
 
 This means that the class defines instance variables, but lacks relevant methods. Such classes are very likely being manipulated by other classes heavily.
 
-Often, this is an indication that relevant functionality for that data it stores is being implemented elsewhere in the code, or that the data stored in objects of the class should be storied in another class.
-
-To avoid this code smell, ensure that relevant functionality for the data is being stored in methods in the class, and that the data is being stored in the class which is most appropriate for it.
 ~~~ python
 from math import sqrt
 
@@ -37,3 +34,6 @@ class Coordinates:
 my_coordinates = Coordinates(4, -7, 43)
 print(my_coordinates.distance())
 ~~~
+Often, this is an indication that relevant functionality for the data that it stores is being implemented elsewhere in the code, or that the data stored in objects of the class should be stored in another class.
+
+To avoid this code smell, ensure that relevant functionality for the data is being stored in methods in the class, and that the data is being stored in the class which is most appropriate for it.
