@@ -34,6 +34,7 @@ class Coordinates:
 my_coordinates = Coordinates(4, -7, 43)
 print(my_coordinates.distance())
 ~~~
+
 Often, this is an indication that relevant functionality for the data that it stores is being implemented elsewhere in the code, or that the data stored in objects of the class should be stored in another class.
 
 To avoid this code smell, ensure that relevant functionality for the data is implemented in methods in the class, and that the data is being stored in the class which is most appropriate for it.
