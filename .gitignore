@@ -1,0 +1,10 @@
+notes.md
+.idea
+*.pxm
+.DS_Store
+
+# For local Jeyll builds
+Gemfile
+Gemfile.lock
+_site
+.jekyll-cache
